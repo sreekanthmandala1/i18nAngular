@@ -4,6 +4,11 @@
   "newProjectRoot": "projects",
   "projects": {
     "i18nAngular": {
+      "i18n" : {
+        "locales": {
+          "fr" : "src/translate/messages.fr.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -50,6 +55,11 @@
               ],
               "outputHashing": "all"
             },
+            "fr" : {
+              "localize" : [
+                "fr"
+              ]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -66,6 +76,9 @@
           "configurations": {
             "production": {
               "browserTarget": "i18nAngular:build:production"
+            },
+            "fr" : {
+              "browserTarget": "i18nAngular:build:fr"
             },
             "development": {
               "browserTarget": "i18nAngular:build:development"
