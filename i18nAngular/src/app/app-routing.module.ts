@@ -3,12 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  {
-    path:'en-US' , component : AppComponent
-  },
-  {
-    path:'', redirectTo:'en-US' , pathMatch:'full'
-  }
+  // {
+  //   path:'en-US' , component : AppComponent
+  // },
+  // {
+  //   path:'', redirectTo:'en-US' , pathMatch:'full'
+  // }
 ];
 
 @NgModule({

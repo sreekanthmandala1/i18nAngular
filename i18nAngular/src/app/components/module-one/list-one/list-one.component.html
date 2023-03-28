@@ -1,0 +1,21 @@
+<a href="/en-US">
+  <button>
+    English
+  </button>
+</a>
+<a href="/fr">
+  <button>
+    french
+  </button>
+</a>
+<div i18n>
+  walking
+</div>
+
+<button [routerLink]="['../','../','moduleTwo','listTwo','fr']">
+  route to list two
+</button>
+
+<button [routerLink]="['/','moduleTwo','listTwo','en-US']">
+  make it english
+</button>
