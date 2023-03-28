@@ -8,3 +8,6 @@ ng build --configuration production --localize
 firebase login
 firebase init
 firebase deploy
+
+Deployed siteLanguage
+https://i18nangular.web.app/fr/
