@@ -1,0 +1,30 @@
+<!-- <a href="/en-US">
+  <button>
+    English
+  </button>
+</a>
+<a href="/fr">
+  <button>
+    french
+  </button>
+</a> -->
+
+<select
+  (change)="onChange()"
+  [(ngModel)]="activeLocale"
+>
+  <option
+    *ngFor="let locale of locales"
+    [value]="locale.code"
+  >
+    {{ locale.name }}
+  </option>
+</select>
+
+<button (click)="goToSampleOne()">
+  go to sample one
+</button>
+
+<div i18n>
+  walking
+</div>

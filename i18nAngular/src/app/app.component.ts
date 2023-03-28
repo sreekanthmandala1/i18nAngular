@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,10 @@ export class AppComponent implements OnInit{
     {code : "en-US" , label : "English"},
     {code : "fr" , label : "French"},
   ]
+
+  constructor(private router : Router){
+
+  }
 
   ngOnInit(){
     this.siteLocale = window.location.pathname.split('/')[1];
