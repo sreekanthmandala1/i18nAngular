@@ -11,3 +11,6 @@
 
 Deployed siteLanguage
 https://i18nangular.web.app/fr/
+
+Reference
+https://www.youtube.com/watch?v=9ljs8zxOEQU
