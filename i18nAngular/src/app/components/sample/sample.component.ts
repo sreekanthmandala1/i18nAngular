@@ -13,8 +13,6 @@ export class SampleComponent implements OnInit{
   ];
 
   ngOnInit(): void {
-    debugger
-      this.router.navigate(['/','en-US'])
   }
 
   constructor(@Inject(LOCALE_ID) public activeLocale: any, private router : Router){
@@ -27,6 +25,4 @@ export class SampleComponent implements OnInit{
   goToSampleOne(){
     this.router.navigate(['/','sampleOne'])
   }
-
-
 }
